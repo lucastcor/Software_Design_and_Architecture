@@ -1,0 +1,26 @@
+ID,Tipo,Descrição,Prioridade,Fontes,Critério de Aceite (GWT),Nota
+F-001,Funcional,Cadastro de pacientes com dados mínimos e consentimento digital.,Must,PROC;SA1;NORM,"Dado um novo paciente, quando cadastrar, então o sistema registra dados essenciais e termo de consentimento.",Nota: LGPD incentiva minimização; Código de Ética requer ciência prévia do paciente.
+F-002,Funcional,Cadastro de profissionais com CRP e agenda.,Must,PROC;NORM,"Dado profissional cadastrado, quando inserir CRP e horários, então agenda fica disponível.",Nota: identificação do profissional é obrigatória nos registros.
+F-003,Funcional,Gerenciar agenda multi-profissional e multi-sala.,Must,PROC;SA1,"Dado clínica com mais de um psicólogo, quando acessar agenda, então exibe múltiplas agendas integradas.",Nota: Terapee disponibiliza multi-agenda.
+F-004,Funcional,"Agendar, remarcar e cancelar consultas.",Must,PROC;SA1,"Dado agendamento existente, quando cancelar, então status e motivo são registrados.",Nota: exigência do fluxo de negócio da clínica.
+F-005,Funcional,Enviar lembretes automáticos e alertas de pagamento.,Must,PROC;SA1,"Dado consulta futura, quando atingir antecedência definida, então paciente recebe lembrete.","Nota: comunicação pode ocorrer por WhatsApp, e-mail ou SMS."
+F-006,Funcional,Check-in do paciente para confirmação de presença.,Should,SA1,"Dado agendamento, quando paciente confirmar, então sistema registra presença antecipada.",Nota: melhora previsibilidade da agenda.
+F-007,Funcional,Prontuário eletrônico com anexos e histórico de versões.,Must,PROC;SA1;NORM,"Dado atendimento, quando salvar evolução, então permite anexos e mantém versões.",Nota: preservar histórico e integridade dos registros.
+F-008,Funcional,Controle de acesso por perfis (RBAC).,Must,PROC;NORM,"Dado secretaria logada, quando acessar prontuário, então acesso é negado.",Nota: apenas psicólogos acessam dados clínicos sensíveis.
+F-009,Funcional,"Gestão de cobranças, recibos e alertas de inadimplência.",Must,PROC;SA1,"Dado pagamento, quando confirmado, então gera recibo PDF.",Nota: facilita conferência e transparência para o paciente.
+F-010,Funcional,Relatórios financeiros e de ocupação.,Should,PROC,"Dado período, quando gerar relatório, então exporta PDF/CSV.",Nota: apoia decisão gerencial.
+F-011,Funcional,Teleatendimento com link seguro e aceite do paciente.,Must,PROC;NORM,"Dado atendimento online, quando iniciar, então gera link único e registra aceite.",Nota: comunicação clara ao paciente sobre sigilo e meios utilizados.
+F-012,Funcional,Logs de acesso e auditoria.,Must,NORM,"Dado acesso a prontuário, quando ocorrer, então registra usuário, hora e operação.",Nota: trilha de auditoria atende conformidade.
+F-013,Funcional,Exportação de dados do paciente (portabilidade).,Must,NORM,"Dado solicitação, quando aprovada, então exporta dados em JSON/CSV.",Nota: direito de portabilidade do titular.
+F-014,Funcional,Anonimização/eliminação de dados.,Must,NORM,"Dado pedido de eliminação, quando autorizado, então dados são anonimizados preservando guarda mínima.",Nota: considerar prazos legais mínimos de guarda.
+F-015,Funcional,Formulários personalizáveis pelo profissional.,Could,SA1,"Dado profissional, quando criar formulário, então pode aplicar em atendimentos.",Nota: agiliza coleta padronizada de informações.
+NF-001,Não Funcional,Conexão segura (HTTPS/TLS).,Must,NORM,O sistema deve usar HTTPS para proteger dados em trânsito.,Nota: HTTPS = “cadeado” do navegador; evita interceptação.
+NF-002,Não Funcional,Criptografia em repouso para prontuários.,Must,NORM,Dados clínicos armazenados devem estar criptografados.,Nota: reduz impacto de vazamentos.
+NF-003,Não Funcional,Autenticação individual e MFA para administradores.,Should,NORM,Cada usuário deve ter login único e admins devem usar autenticação em dois fatores.,Nota: eleva a segurança de contas privilegiadas.
+NF-004,Não Funcional,"Disponibilidade ≥ 99,5% mensal.",Should,NORM,Sistema deve ficar fora do ar no máximo ~3h36min/mês.,Nota: meta de confiabilidade alinhada a bons serviços web.
+NF-005,Não Funcional,Desempenho (resposta < 2s em 95%).,Should,NORM,"Em 95% das requisições, resposta em até 2s.",Nota: percentil 95 (P95) = olhar a grande maioria dos casos.
+NF-006,Não Funcional,Usabilidade e acessibilidade (WCAG 2.1 AA).,Should,NORM,"Interface deve ser acessível (contraste, teclado, responsividade).",Nota: importante para diferentes perfis de pacientes/usuários.
+NF-007,Não Funcional,Portabilidade WEB/PWA.,Could,NORM,Compatível com navegadores modernos e PWA.,Nota: permite uso no celular como “app”).
+NF-008,Não Funcional,Auditabilidade de logs (retenção alinhada à guarda de prontuários).,Must,NORM,Eventos críticos devem ser registrados e mantidos conforme política de guarda da clínica.,Nota: alinhar a retenção dos logs aos prazos de documentação clínica.
+NF-009,Não Funcional,Backup diário e teste mensal de restauração.,Must,NORM,Backups devem ser feitos diariamente e testados mensalmente.,Nota: reduz risco de perda de dados.
+NF-010,Não Funcional,Privacidade por padrão.,Must,NORM,"Coletar apenas dados mínimos, com base legal definida.",Nota: princípio de minimização de dados.

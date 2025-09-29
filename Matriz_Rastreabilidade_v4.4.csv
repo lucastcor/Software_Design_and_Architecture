@@ -1,0 +1,37 @@
+ID Requisito,Descrição,Fonte (código),Fonte (descrição)
+F-001,Cadastro de pacientes com dados mínimos e consentimento digital.,PROC,Processos de Negócio (clínica)
+F-001,Cadastro de pacientes com dados mínimos e consentimento digital.,SA1,Terapee (funcionalidades públicas)
+F-001,Cadastro de pacientes com dados mínimos e consentimento digital.,NORM,"Normas/Leis (CFP, CFM, LGPD, Lei 13.787/2018, ISO/IEC 25010)"
+F-002,Cadastro de profissionais com CRP e agenda.,PROC,Processos de Negócio (clínica)
+F-002,Cadastro de profissionais com CRP e agenda.,NORM,"Normas/Leis (CFP, CFM, LGPD, Lei 13.787/2018, ISO/IEC 25010)"
+F-003,Gerenciar agenda multi-profissional e multi-sala.,PROC,Processos de Negócio (clínica)
+F-003,Gerenciar agenda multi-profissional e multi-sala.,SA1,Terapee (funcionalidades públicas)
+F-004,"Agendar, remarcar e cancelar consultas.",PROC,Processos de Negócio (clínica)
+F-004,"Agendar, remarcar e cancelar consultas.",SA1,Terapee (funcionalidades públicas)
+F-005,Enviar lembretes automáticos e alertas de pagamento.,PROC,Processos de Negócio (clínica)
+F-005,Enviar lembretes automáticos e alertas de pagamento.,SA1,Terapee (funcionalidades públicas)
+F-006,Check-in do paciente para confirmação de presença.,SA1,Terapee (funcionalidades públicas)
+F-007,Prontuário eletrônico com anexos e histórico de versões.,PROC,Processos de Negócio (clínica)
+F-007,Prontuário eletrônico com anexos e histórico de versões.,SA1,Terapee (funcionalidades públicas)
+F-007,Prontuário eletrônico com anexos e histórico de versões.,NORM,"Normas/Leis (CFP, CFM, LGPD, Lei 13.787/2018, ISO/IEC 25010)"
+F-008,Controle de acesso por perfis (RBAC).,PROC,Processos de Negócio (clínica)
+F-008,Controle de acesso por perfis (RBAC).,NORM,"Normas/Leis (CFP, CFM, LGPD, Lei 13.787/2018, ISO/IEC 25010)"
+F-009,"Gestão de cobranças, recibos e alertas de inadimplência.",PROC,Processos de Negócio (clínica)
+F-009,"Gestão de cobranças, recibos e alertas de inadimplência.",SA1,Terapee (funcionalidades públicas)
+F-010,Relatórios financeiros e de ocupação.,PROC,Processos de Negócio (clínica)
+F-011,Teleatendimento com link seguro e aceite do paciente.,PROC,Processos de Negócio (clínica)
+F-011,Teleatendimento com link seguro e aceite do paciente.,NORM,"Normas/Leis (CFP, CFM, LGPD, Lei 13.787/2018, ISO/IEC 25010)"
+F-012,Logs de acesso e auditoria.,NORM,"Normas/Leis (CFP, CFM, LGPD, Lei 13.787/2018, ISO/IEC 25010)"
+F-013,Exportação de dados do paciente (portabilidade).,NORM,"Normas/Leis (CFP, CFM, LGPD, Lei 13.787/2018, ISO/IEC 25010)"
+F-014,Anonimização/eliminação de dados.,NORM,"Normas/Leis (CFP, CFM, LGPD, Lei 13.787/2018, ISO/IEC 25010)"
+F-015,Formulários personalizáveis pelo profissional.,SA1,Terapee (funcionalidades públicas)
+NF-001,Conexão segura (HTTPS/TLS).,NORM,"Normas/Leis (CFP, CFM, LGPD, Lei 13.787/2018, ISO/IEC 25010)"
+NF-002,Criptografia em repouso para prontuários.,NORM,"Normas/Leis (CFP, CFM, LGPD, Lei 13.787/2018, ISO/IEC 25010)"
+NF-003,Autenticação individual e MFA para administradores.,NORM,"Normas/Leis (CFP, CFM, LGPD, Lei 13.787/2018, ISO/IEC 25010)"
+NF-004,"Disponibilidade ≥ 99,5% mensal.",NORM,"Normas/Leis (CFP, CFM, LGPD, Lei 13.787/2018, ISO/IEC 25010)"
+NF-005,Desempenho (resposta < 2s em 95%).,NORM,"Normas/Leis (CFP, CFM, LGPD, Lei 13.787/2018, ISO/IEC 25010)"
+NF-006,Usabilidade e acessibilidade (WCAG 2.1 AA).,NORM,"Normas/Leis (CFP, CFM, LGPD, Lei 13.787/2018, ISO/IEC 25010)"
+NF-007,Portabilidade WEB/PWA.,NORM,"Normas/Leis (CFP, CFM, LGPD, Lei 13.787/2018, ISO/IEC 25010)"
+NF-008,Auditabilidade de logs (retenção alinhada à guarda de prontuários).,NORM,"Normas/Leis (CFP, CFM, LGPD, Lei 13.787/2018, ISO/IEC 25010)"
+NF-009,Backup diário e teste mensal de restauração.,NORM,"Normas/Leis (CFP, CFM, LGPD, Lei 13.787/2018, ISO/IEC 25010)"
+NF-010,Privacidade por padrão.,NORM,"Normas/Leis (CFP, CFM, LGPD, Lei 13.787/2018, ISO/IEC 25010)"
