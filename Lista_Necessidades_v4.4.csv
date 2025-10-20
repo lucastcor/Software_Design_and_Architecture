@@ -1,9 +1,0 @@
-ID,Necessidade,Explicação
-N-01,Reduzir faltas (no-show),Automatizar lembretes multicanal e confirmação de presença (check-in). Fonte: Processos de Negócio (clínica); Terapee (funcionalidades públicas).
-N-02,Centralizar a agenda,"Multi-agenda integrada por profissional/sala, com bloqueios e remarcações. Fonte: Processos de Negócio (clínica); Terapee (funcionalidades públicas)."
-N-03,Confidencialidade e sigilo,"Controle de acesso e consentimento conforme Código de Ética e LGPD. Fonte: Normas/Leis (CFP, CFM, LGPD, Lei 13.787/2018, ISO/IEC 25010)."
-N-04,Prontuário completo e seguro,"Anexos, histórico de versões e guarda mínima de 20 anos. Fonte: Normas/Leis (CFP, CFM, LGPD, Lei 13.787/2018, ISO/IEC 25010)."
-N-05,Controle financeiro,"Emitir cobranças, recibos em PDF e alertas de inadimplência. Fonte: Processos de Negócio (clínica); Terapee (funcionalidades públicas)."
-N-06,Teleatendimento regulamentado,"Links seguros, registro de aceite e conformidade. Fonte: Normas/Leis (CFP, CFM, LGPD, Lei 13.787/2018, ISO/IEC 25010)."
-N-07,Indicadores de gestão,"Relatórios de ocupação, cancelamentos, faturamento. Fonte: Processos de Negócio (clínica)."
-N-08,Acessibilidade e inclusão,"Interface responsiva e acessível (WCAG 2.1). Fonte: Normas/Leis (CFP, CFM, LGPD, Lei 13.787/2018, ISO/IEC 25010)."
